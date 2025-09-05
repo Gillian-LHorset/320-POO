@@ -53,11 +53,6 @@
             this._lifetimeRangeLast = 40;
         }
 
-        public void start(string body, int lifetime)
-        {
-
-        }
-
     }
 
 }
