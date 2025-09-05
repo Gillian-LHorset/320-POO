@@ -8,13 +8,34 @@ namespace EcerciceParachutes
 {
     public class Para
     {
-        public string _name;
-        public string _paraPositionX;
-        public string _paraPositionY;
+        public string name;
+        public int paraPositionX;
+        public int paraPositionY;
  
-        public Para(string _name)
+        public Para(string name)
         {
-            this._name = _name;
+            this.name = name;
         }
+
+        public string[] withoutParachute =
+        {
+            @"     ",
+            @"     ",
+            @"     ",
+            @"  o  ",
+            @" /░\ ",
+            @" / \ ",
+        };
+
+        public string[] withParachute =
+        {
+            @" ___ ",
+            @"/|||\",
+            @"\   /",
+            @" \o/ ",
+            @"  ░  ",
+            @" / \ ",
+        };
+
     }
 }

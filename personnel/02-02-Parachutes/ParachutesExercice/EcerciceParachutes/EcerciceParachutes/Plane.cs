@@ -8,7 +8,7 @@ namespace EcerciceParachutes
 {
     public class Plane
     {
-        public int _planePositionX = 0;
+        public int planePositionX = 0;
 
         public string[] planeskin =
         {
@@ -24,14 +24,14 @@ namespace EcerciceParachutes
         {
             for (int i = 0; i < planeskin.Length; i++)
             {
-                Console.SetCursorPosition(_planePositionX, i);
+                Console.SetCursorPosition(planePositionX, i);
                 Console.WriteLine(planeskin[i]);
             }
         }
 
         public void PlaneMove()
         {
-            _planePositionX++;
+            planePositionX++;
         }
     }
 }

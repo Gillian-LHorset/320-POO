@@ -9,20 +9,26 @@
 
             Console.CursorVisible = false;
 
+            ConsoleKeyInfo keyPressed;
+
             Plane plane = new Plane();
 
             List<Para> paraList = new List<Para>();
 
             for (int i = 0; i < 8; i++)
             {
-                paraList.Add(new Para("bob"));
+                paraList.Add(new Para("bob" + i.ToString()));
             }
 
             while (true) {
 
                 if (Console.KeyAvailable)
                 {
-                    
+                    keyPressed = Console.ReadKey(false);
+                    if (keyPressed.Key == ConsoleKey.Spacebar)
+                    {
+
+                    }
                 }
 
                 plane.PlaneMove();
