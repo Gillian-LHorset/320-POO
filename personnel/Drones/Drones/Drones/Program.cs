@@ -1,3 +1,6 @@
+using Drones.Helpers;
+using Drones.View;
+
 namespace Drones
 {
     internal static class Program
@@ -12,6 +15,13 @@ namespace Drones
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
+            List<Building> buildings = new List<Building>();
+            
+                Building test = new Building(randomHelper.randomNmb.Next(0, 10), randomHelper.randomNmb.Next(0, 10), randomHelper.randomNmb.Next(0, AirSpace.WIDTH), randomHelper.randomNmb.Next(0, AirSpace.HEIGHT));
+                buildings.Add(test);
+            
+               
+
             // Création de la flotte de drones
             List<Drone> fleet= new List<Drone>();
             Drone drone = new Drone();
@@ -21,7 +31,7 @@ namespace Drones
             fleet.Add(drone);
 
             // Démarrage
-            Application.Run(new AirSpace(fleet));
+            Application.Run(new AirSpace(fleet, buildings));
         }
     }
 }
