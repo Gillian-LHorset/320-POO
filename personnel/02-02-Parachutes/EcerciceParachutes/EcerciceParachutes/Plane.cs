@@ -33,5 +33,9 @@ namespace EcerciceParachutes
         {
             planePositionX++;
         }
+
+        public void dropPara()
+        {
+        }
     }
 }
