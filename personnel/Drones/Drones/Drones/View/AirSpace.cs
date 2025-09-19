@@ -34,7 +34,7 @@ namespace Drones
         // Affichage de la situation actuelle
         private void Render()
         {
-            airspace.Graphics.Clear(Color.AliceBlue);
+            airspace.Graphics.Clear(Color.White);
 
             // draw drones
             foreach (Drone drone in fleet)

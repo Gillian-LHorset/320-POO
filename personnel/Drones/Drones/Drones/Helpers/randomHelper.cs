@@ -1,6 +1,6 @@
 ﻿namespace Drones.Helpers
 {
-    internal static class randomHelper
+    internal static class RandomHelper
     {
         public static Random randomNmb = new Random();
     }

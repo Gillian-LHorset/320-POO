@@ -16,9 +16,12 @@ namespace Drones
             ApplicationConfiguration.Initialize();
 
             List<Building> buildings = new List<Building>();
-            
-                Building test = new Building(randomHelper.randomNmb.Next(0, 10), randomHelper.randomNmb.Next(0, 10), randomHelper.randomNmb.Next(0, AirSpace.WIDTH), randomHelper.randomNmb.Next(0, AirSpace.HEIGHT));
-                buildings.Add(test);
+
+            for (int i = 0; i < 10; i++)
+            {
+                Building building = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
+                buildings.Add(building);
+            }
             
                
 
