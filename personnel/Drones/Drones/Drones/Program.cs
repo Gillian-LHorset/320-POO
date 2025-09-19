@@ -19,8 +19,8 @@ namespace Drones
 
             for (int i = 0; i < 10; i++)
             {
-                Building building = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
-                buildings.Add(building);
+                Building tony = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
+                buildings.Add(tony);
             }
             
                
