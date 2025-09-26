@@ -27,8 +27,13 @@ namespace Drones
             // Creates a BufferedGraphics instance associated with this form, and with
             // dimensions the same size as the drawing surface of the form.
             airspace = currentContext.Allocate(this.CreateGraphics(), this.DisplayRectangle);
-            this.fleet = fleet;
             this.buildings = buildings;
+            this.fleet = fleet;
+
+            if (fleet.Count() < 11)
+            {
+                throw new Exception("probleme détecter");
+            }
         }
 
         // Affichage de la situation actuelle
