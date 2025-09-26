@@ -30,7 +30,7 @@ namespace Drones
             this.buildings = buildings;
             this.fleet = fleet;
 
-            if (fleet.Count() < 11)
+            if (fleet.Count() > 10)
             {
                 throw new Exception("probleme détecter");
             }

@@ -19,22 +19,20 @@ namespace Drones
 
             for (int i = 0; i < 10; i++)
             {
-                Building tony = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
-                buildings.Add(tony);
+                Building building = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
+                
+                buildings.Add(building);
             }
             
-               
+            
 
             // Création de la flotte de drones
             List<Drone> fleet = new List<Drone>();
-            for (int i = 0; i < 10; i++)
-            {
-                Drone drone = new Drone();
-                drone.X = 100;
-                drone.Y = 100;
-                drone.Name = "Joe" + i;
-                fleet.Add(drone);
-            }
+            Drone drone = new Drone();
+            drone.X = 100;
+            drone.Y = 100;
+            drone.Name = "Joe";
+            fleet.Add(drone);
 
             try
             {
