@@ -24,7 +24,7 @@ namespace Drones
                 //Building building = new Building(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
                 //buildings.Add(building);
 
-                Factory factory = new Factory(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));
+                Factory factory = new Factory(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT), i);
                 factorys.Add(factory);
 
                 Store store = new Store(100, 100, RandomHelper.randomNmb.Next(1, AirSpace.WIDTH), RandomHelper.randomNmb.Next(1, AirSpace.HEIGHT));

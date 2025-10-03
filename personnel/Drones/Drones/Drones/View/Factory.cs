@@ -19,7 +19,7 @@ namespace Drones.View
 
         
 
-        public void Box(int numCarton, int kgSmarties, string smartiesColor)
+        public void Box(int numCarton, int kgSmarties, string smartiesColor, int id)
         {
 
         }
