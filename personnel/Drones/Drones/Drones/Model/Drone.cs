@@ -7,9 +7,9 @@ namespace Drones
     public partial class Drone : IExpellable
     {
         private int charge = 1000;                     // La charge actuelle de la batterie
-        private string _name;                           // Un nom
+        private string _name;                          // Un nom
         private int _x;                                // Position en X depuis la gauche de l'espace aérien
-        private int _y;                                 // Position en Y depuis le haut de l'espace aérien
+        private int _y;                                // Position en Y depuis le haut de l'espace aérien
 
         public string Name { get { return _name; } set {  _name = value; } }
         public int X { get { return _x; } set { _x = value; } }
