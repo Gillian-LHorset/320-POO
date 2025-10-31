@@ -12,16 +12,21 @@ namespace Drones.View
 
         protected override SolidBrush BuildingBrush => new SolidBrush(Color.Red);
 
-        public Factory(int dimensionX, int dimensionY, int x, int y) : base(dimensionX, dimensionY, x, y)
+        public Factory(int dimensionX, int dimensionY, int x, int y, int id) : base(dimensionX, dimensionY, x, y)
         {
         }
 
-
+        public int test;
         
 
-        public void Box(int numCarton, int kgSmarties, string smartiesColor, int id)
+        public void Box(int numCarton, int kgSmarties, string smartiesColor)
         {
 
+        }
+
+        public void Update()
+        {
+            test++;
         }
 
     }
